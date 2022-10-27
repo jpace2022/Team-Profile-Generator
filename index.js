@@ -100,8 +100,7 @@ function startHtml() {
     </div>
 </div>
 <div class="container">
-    <div class="row">
-    <div class="team-area col-12 d-flex justify-content-center">`;
+    <div class="row">`;
     fs.writeFile("./dist/team.html", html, function(err) {
         if (err) {
             console.log(err);
@@ -117,16 +116,17 @@ function addHtml(member) {
         const id = member.getId();
         const email = member.getEmail();
         let data = "";
+        //console.log(member)
         if (role === "Engineer") {
             const gitHub = member.getGithub();
             data = `<div class="col-6">
             <div class="card mx-auto mb-3" style="width: 18rem">
             <h5 class="card-header">${name}<br /><br />Engineer</h5>
-
+            <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
                 <li class="list-group-item">Email:<a href=" ${email}"> ${email}</a></li>
                 <li class="list-group-item">GitHub:<a href="https://github.com/${gitHub}"target="_blank" rel="noopener noreferrer"> ${gitHub}</a></li>
-            
+            </ul>
             </div>
         </div>`;
         } else if (role === "Intern") {
@@ -143,12 +143,15 @@ function addHtml(member) {
         </div>`;
         } else {
             const officePhone = member.getOfficeNumber();
+            console.log(officePhone)
             data = `<div class="col-6">
             <div class="card mx-auto mb-3" style="width: 18rem">
             <h5 class="card-header">${name}<br /><br />Manager</h5>
+            <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
                 <li class="list-group-item">Email:<a href=" ${email}"> ${email}</a></li>
                 <li class="list-group-item">Phone: ${officePhone}</li>
+                </ul>
             </div>
         </div>`
         }
