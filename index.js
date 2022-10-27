@@ -122,11 +122,11 @@ function addHtml(member) {
             data = `<div class="col-6">
             <div class="card mx-auto mb-3" style="width: 18rem">
             <h5 class="card-header">${name}<br /><br />Engineer</h5>
-            <ul class="list-group list-group-flush">
+
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email: ${email}</li>
-                <li class="list-group-item">GitHub: ${gitHub}</li>
-            </ul>
+                <li class="list-group-item">Email:<a href=" ${email}"> ${email}</a></li>
+                <li class="list-group-item">GitHub:<a href="https://github.com/${gitHub}"target="_blank" rel="noopener noreferrer"> ${gitHub}</a></li>
+            
             </div>
         </div>`;
         } else if (role === "Intern") {
@@ -136,7 +136,7 @@ function addHtml(member) {
             <h5 class="card-header">${name}<br /><br />Intern</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email: ${email}</li>
+                <li class="list-group-item">Email:<a href=" ${email}"> ${email}</a></li>
                 <li class="list-group-item">School: ${school}</li>
             </ul>
             </div>
@@ -146,11 +146,9 @@ function addHtml(member) {
             data = `<div class="col-6">
             <div class="card mx-auto mb-3" style="width: 18rem">
             <h5 class="card-header">${name}<br /><br />Manager</h5>
-            <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email: ${email}</li>
-                <li class="list-group-item">Office Phone: ${officePhone}</li>
-            </ul>
+                <li class="list-group-item">Email:<a href=" ${email}"> ${email}</a></li>
+                <li class="list-group-item">Phone: ${officePhone}</li>
             </div>
         </div>`
         }
@@ -162,12 +160,6 @@ function addHtml(member) {
             return resolve();
         });
     });
-    
-            
-    
-        
-    
-    
 }
 
 function finishHtml() {
