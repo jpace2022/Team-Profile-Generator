@@ -67,9 +67,9 @@ The styling in the image is just an example, so feel free to add your own.
     
 
 ## Screenshot Image
-![Profile Generator](#)
-![Profile Generator](#)
-![Profile Generator](#)
+![Profile Generator](https://github.com/jpace2022/Team-Profile-Generator/blob/main/src/vs%20code%20screen%20shot.png?raw=true)
+![Profile Generator](https://github.com/jpace2022/Team-Profile-Generator/blob/main/src/vs%20code%20screen%20shot%202.png?raw=true)
+![Profile Generator](https://drive.google.com/file/d/1QQ5osMzUYvnH4Zd8i6dTjL7Si6_bG2PX/view?usp=sharing)
 
 ## Finished Website
-[Profile Generator(#)][Demo video readme gen.webm](#)
+[Profile Generator(https://drive.google.com/file/d/1QQ5osMzUYvnH4Zd8i6dTjL7Si6_bG2PX/view?usp=sharing)][Demo video readme gen.webm](https://drive.google.com/file/d/1QQ5osMzUYvnH4Zd8i6dTjL7Si6_bG2PX/view?usp=sharing)
